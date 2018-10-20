@@ -5,9 +5,24 @@
 
 //     });
 
+
 $( "#button1" ).click(function() {
 $('#terms-header').load('disclaimer.html');
         console.log('homepage');
+
+        $(window).scroll(function () {
+    console.log($(window).scrollTop());
+    var topDivHeight = $("#section-one").height();
+    var viewPortSize = $(window).height();
+
+    var triggerAt = 250;
+    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+
+    if ($(window).scrollTop() >= triggerHeight) {
+        $('.quote').css('visibility', 'visible').hide().fadeIn();
+        $(this).off('scroll');
+    }
+    });
                         // alert("This is the homepage");
 });
 
@@ -21,20 +36,12 @@ $( "#button3" ).click(function() {
         $('#gifSpinner').show();
 
 
-$('#terms-header').load('disclaimerthree.html', function (){   $('#gifSpinner').hide();
+$('#terms-header').load('about.html', function (){   $('#gifSpinner').hide();
     console.log('loader shown');
 });
         console.log('contact us');
                         // alert("This is the contact us page");
-});
-
- // $('#loading').show();
-
- //    $("#content").load("example.html", function () { //calback function
- //         $('#loading').hide();
- //    });
-
- $(window).scroll(function () {
+                        $(window).scroll(function () {
     console.log($(window).scrollTop());
     var topDivHeight = $("#section-one").height();
     var viewPortSize = $(window).height();
@@ -47,3 +54,11 @@ $('#terms-header').load('disclaimerthree.html', function (){   $('#gifSpinner').
         $(this).off('scroll');
     }
     });
+});
+
+ // $('#loading').show();
+
+ //    $("#content").load("example.html", function () { //calback function
+ //         $('#loading').hide();
+ //    });
+

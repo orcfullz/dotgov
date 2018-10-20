@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>AGENCY</title>
+    <title>DotGov - CLAN</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
 
@@ -30,11 +30,12 @@
             </g>
         </svg>
     </div> -->
+    <div id="terms-header">
     <section id="section-one">
     <div class="container" id="">
         <div class="row">
             <div class="col-md-12">
-                <div class="terms" id="terms-header">
+                <div class="terms" >
                     <div id="header">
                        
                         <h1 id="comp-name">The DotGov Podcast</h1><br>
@@ -116,7 +117,10 @@ In each episode, we explore this world through parts of the government of this f
         <div class="row">
             <div class="col-sm-6">
                 <div class="terms quote image episode1">
-                    
+                    <img src='../assets/images/dotgov-ep1.png'' style="margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;" />
+
             </div>
 
         </div>
@@ -137,17 +141,37 @@ In each episode, we explore this world through parts of the government of this f
 
     </div>
 </section>
+</div>
     <div id="button-holder">
-        <button id="button1">Our Methods</button>
+        <button id="button1">Episode 1</button>
         <button id="button2">The Team 2</button>
-        <button id="button3">Contact 3</button>
+        <button id="button3">Home</button>
 
         <div id='gifSpinner'>
             Please wait... <img src='https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif' />
         </div>
         <script src="scripts/jquery.smoothState.min.js"></script>
         <script src="scripts/script.js"></script>
+<script> 
 
+$(document).ready(function() {
+
+    $(window).scroll(function () {
+    console.log($(window).scrollTop());
+    var topDivHeight = $("#section-one").height();
+    var viewPortSize = $(window).height();
+
+    var triggerAt = 250;
+    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+
+    if ($(window).scrollTop() >= triggerHeight) {
+        $('.quote').css('visibility', 'visible').hide().fadeIn();
+        $(this).off('scroll');
+    }
+    });
+        });
+
+</script>
 </body>
 
 </html>

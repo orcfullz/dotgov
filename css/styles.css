@@ -41,9 +41,22 @@ background-size:cover;
 z-index:;
 }
 
+.main-quote{
+font-size:10vh !important;
+font-weight:bold;
+font-family:IBM-PLEX;
+margin-bottom:0;
+padding-bottom:0;
+    width:fit-content;
+
+color:#414142;
+
+
+}
+
 .episode1{
 
-    background-image:url('../assets/images/dotgov-ep1.png') !important;
+    background-image:url('') !important;
 background-size:25% !important;
 background-position:;
 background-repeat:no-repeat;

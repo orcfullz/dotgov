@@ -36,9 +36,17 @@ overflow-x:hidden;
 
 #section-one{
 
-  background-image:url('../assets/images/header.jpg');
+  /*background-image:url('../assets/images/header.jpg');*/
 background-size:cover;
 z-index:;
+}
+
+.episode1{
+
+    background-image:url('../assets/images/dotgov-ep1.png') !important;
+background-size:25% !important;
+background-position:;
+background-repeat:no-repeat;
 }
 
 
@@ -76,7 +84,10 @@ font-weight:bold;
 font-family:IBM-PLEX;
 margin-bottom:0;
 padding-bottom:0;
-color:white;
+    background: linear-gradient(white 50%, yellow 50%);
+    width:fit-content;
+
+color:#414142;
 }
 
 
@@ -85,7 +96,7 @@ color:white;
 font-size:32px;
 margin:0;
 padding:0;
-color:white;
+color:#414142;
 
 }
 
@@ -174,7 +185,7 @@ color:white;
             height: 100vh;
             padding:25% 15%;
 overflow: hidden;
-  background-color:rgba(193, 117, 62, 0.43);
+  /*background-color:rgba(193, 117, 62, 0.43);*/
     visibility:hidden;
 
 }
@@ -182,6 +193,12 @@ overflow: hidden;
 .para{
 
   background-color:transparent !important;
+}
+.image{
+ background-image:url('../assets/images/bg.png');
+background-size:contain;
+/*z-index:;*/
+
 }
 
 .quote h {
@@ -196,7 +213,7 @@ overflow: hidden;
   .quote p {
 
 
-    font-size:2vh;
+    font-size:2.5vh;
     color:grey;
      font-family:IBM-PLEX;
     font-weight:lighter;

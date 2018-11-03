@@ -4,6 +4,18 @@
 //                         alert("Please read the disclaimer.");
 
 //     });
+$("#button1").on("click", function() {
+   $(window).scrollTop(0);
+    console.log('button scroll to top');
+
+});
+function doClick() { 
+  $(window).scrollTop(0);
+    console.log('button scroll to top');
+}
+$('#button1').click(doClick);
+$('#button2').click(doClick);
+$('#button3').click(doClick);
 
 
 $( "#button1" ).click(function() {
@@ -29,6 +41,7 @@ $('#terms-header').load('disclaimer.html');
 $( "#button2" ).click(function() {
 $('#terms-header').load('disclaimertwo.html');
         console.log('team page');
+
                         // alert("This is the team page");
 });
 

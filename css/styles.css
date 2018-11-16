@@ -175,6 +175,17 @@ color:#414142;
             padding:10%;
         }
 
+
+    .terms--spacer{
+
+      height:100% !important;
+    }
+
+   p {
+
+          font-size:20px;
+        }
+
 .bg-video{
     position: absolute;
     top: 0;

@@ -206,11 +206,13 @@ color:white;
 .container{
   width:100vw !important;
   padding:0 !important;
+  height: 100vh !important;
+  overflow: hidden;
 }
 .quote{
   width: 50vw;
             height: 100vh;
-            padding:25% 15%;
+            /*padding:25% 15%;*/
 overflow: hidden;
   /*background-color:rgba(193, 117, 62, 0.43);*/
     visibility:hidden;
@@ -222,21 +224,30 @@ overflow: hidden;
   background-color:transparent !important;
 }
 .image{
- background-image:url('../assets/images/bg.png');
-background-size:contain;
-background-repeat:no-repeat;
-/*z-index:;*/
+
 visibility: visible;
-      height: 25vh;
+      height: 50vh;
     padding: 0;
-    margin: 0% 0% 5% 15%;
+    /*margin: 0% 0% 5% 15%;*/
     /*background-size:;*/
 }
 
 .text{
-    height: 25vh;
+    height: 50vh;
     padding: 0;
-    margin: 5% 0% 0% 15%;
+    padding-top:10vh;
+    /*margin: 5% 0% 0% 15%;*/
+}
+
+.text h2, p{
+
+  margin-left:25% !important;
+}
+
+.image img {
+background-size:contain;
+    width: 25vw;
+    padding-left: 10%;
 
 }
 
